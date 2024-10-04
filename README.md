@@ -26,15 +26,15 @@ Crear endpoints seguros en el backend utilizando un sistema basado en tokens de 
 ```
 
 ## Endpoints a implementar
-- **login:**
-  - Crear un endpoint para iniciar sesión con correo y contraseña en la ruta `/login`.
-  - Si las credenciales son correctas, devolver un token de sesión.
- 
-- **Weather:**
-  - Crear un endpoint asegurado que permita consultar la temperatura en función de la **latitud** y **longitud** proporcionadas.
-  - Este endpoint debe recibir los parámetros **latitude** y **longitude** a través de query parameters. **ES IMPORTANTE QUE ASÍ SE NOMBREN LOS QUERY PARAMS**
-  - Hacer una petición a la API externa de Open Meteo para obtener la temperatura actual.
-  - El endpoint solo debe ser accesible si se proporciona un token de sesión válido.
+  - **login:**
+    - Crear un endpoint para iniciar sesión con correo y contraseña en la ruta `/login`.
+    - Si las credenciales son correctas, devolver un token de sesión.
+  
+  - **Weather:**
+    - Crear un endpoint asegurado que permita consultar la temperatura en función de la **latitud** y **longitud** proporcionadas.
+    - Este endpoint debe recibir los parámetros **latitude** y **longitude** a través de query parameters. **ES IMPORTANTE QUE ASÍ SE NOMBREN LOS QUERY PARAMS**
+    - Hacer una petición a la API externa de Open Meteo para obtener la temperatura actual.
+    - El endpoint solo debe ser accesible si se proporciona un token de sesión válido.
  
 ## Requisitos Técnicos
 - Crear un servidor Express.js básico que corra en el puerto 3000 (o cualquier otro puerto de tu preferencia).
