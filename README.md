@@ -1,3 +1,8 @@
+Link: http://parcial-ii-sam200630.vercel.app
+
+Samuel Andres Rodriguez Ulloa
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Ihjz_szg)
 # Consultemos el clima
 
 Este proyecto consiste en un reto de desarrollo backend en el que debes crear una API REST utilizando el framework Express.js. El objetivo principal es que implementes un sistema de autenticación mediante token de sesión y un endpoint que consulte la API externa de Open Meteo para obtener la temperatura basándose en coordenadas geográficas.
@@ -25,15 +30,15 @@ Crear endpoints seguros en el backend utilizando un sistema basado en tokens de 
 ```
 
 ## Endpoints a implementar
-- **login:**
-  - Crear un endpoint para iniciar sesión con correo y contraseña en la ruta `/login`.
-  - Si las credenciales son correctas, devolver un token de sesión.
- 
-- **Weather:**
-  - Crear un endpoint asegurado que permita consultar la temperatura en función de la **latitud** y **longitud** proporcionadas.
-  - Este endpoint debe recibir los parámetros **latitude** y **longitude** a través de query parameters. **ES IMPORTANTE QUE ASÍ SE NOMBREN LOS QUERY PARAMS**
-  - Hacer una petición a la API externa de Open Meteo para obtener la temperatura actual.
-  - El endpoint solo debe ser accesible si se proporciona un token de sesión válido.
+  - **login:**
+    - Crear un endpoint para iniciar sesión con correo y contraseña en la ruta `/login`.
+    - Si las credenciales son correctas, devolver un token de sesión.
+  
+  - **Weather:**
+    - Crear un endpoint asegurado que permita consultar la temperatura en función de la **latitud** y **longitud** proporcionadas.
+    - Este endpoint debe recibir los parámetros **latitude** y **longitude** a través de query parameters. **ES IMPORTANTE QUE ASÍ SE NOMBREN LOS QUERY PARAMS**
+    - Hacer una petición a la API externa de Open Meteo para obtener la temperatura actual.
+    - El endpoint solo debe ser accesible si se proporciona un token de sesión válido.
  
 ## Requisitos Técnicos
 - Crear un servidor Express.js básico que corra en el puerto 3000 (o cualquier otro puerto de tu preferencia).
