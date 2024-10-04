@@ -1,4 +1,4 @@
-Link: https://parcial-ii-sam200630-hry1wh2zy.vercel.app
+Link: http://parcial-ii-sam200630.vercel.app
 
 Samuel Andres Rodriguez Ulloa
 

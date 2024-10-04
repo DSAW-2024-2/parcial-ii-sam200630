@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
+
 
 const loginRoutes = require('./routes/login');
 const weatherRoutes = require('./routes/weather');
@@ -20,6 +21,7 @@ app.use((req, res) => {
   res.status(404).send('Ruta no encontrada. Usa /login para autenticación y obtener el token, luego usa /weather con el token para consultar el clima.');
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto ${PORT}`);
-});
+app.listen(port, () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
+  });
+  
