@@ -12,7 +12,7 @@ app.use('/weather', weatherRoutes);
 
 // Mensaje para rutas sin especificar (/, /login, /weather)
 app.get('/', (req, res) => {
-  res.send('Bienvenido a la API. Usa /login para autenticación y obtener el token, luego usa /weather con el token para consultar el clima.');
+  res.send('Bienvenido a la API clima. Usa /login para autenticación y obtener el token, luego usa /weather con el token para consultar el clima.');
 });
 
 // Manejo de rutas no definidas
