@@ -10,11 +10,16 @@ app.use(express.json());
 app.use('/login', loginRoutes);
 app.use('/weather', weatherRoutes);
 
+// Mensaje para rutas sin especificar (/, /login, /weather)
+app.get('/', (req, res) => {
+  res.send('Bienvenido a la API. Usa /login para autenticación y obtener el token, luego usa /weather con el token para consultar el clima.');
+});
+
 // Manejo de rutas no definidas
 app.use((req, res) => {
-  res.status(404).send('Ruta no encontrada.');
+  res.status(404).send('Ruta no encontrada. Usa /login para autenticación y obtener el token, luego usa /weather con el token para consultar el clima.');
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en el puerto 3000`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
